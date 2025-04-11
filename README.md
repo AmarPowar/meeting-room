@@ -1,5 +1,33 @@
 # RESTful API Intro Room Service
 
+# Project Design Decision for calculateIntroTime
+
+Case 1
+
+even people count =2  and 
+pairIntroTime = 5
+
+now here 2 people introducing each other (round robin)
+
+so , it will have 1 introduction round
+
+totalIntroductionTime (even)= (peopleCount - 1) * time = 1*5 = 5(min)
+
+Case 2
+
+even people count =3  and
+pairIntroTime = 5
+
+now here 3 people introducing each other (round robin)
+
+so , it will have 3 introduction round - (no parralle pairing)
+
+1 -> 2 will to intro - first round
+1 -> 3 will do intro - second round
+2 -> 3 will do intro - third round
+
+totalIntroductionTime (odd)= (peopleCount) * time = 3*5 = 15(min)
+
 ## Manual Installation - Local Setup
 
 follow these steps:
@@ -157,11 +185,10 @@ List of available routes:
 ## Logging
 
 ```javascript
-
-logger.error('message'); 
-logger.warn('message'); 
-logger.info('message'); 
-logger.http('message'); 
-logger.verbose('message'); 
-logger.debug('message'); 
+logger.error('message');
+logger.warn('message');
+logger.info('message');
+logger.http('message');
+logger.verbose('message');
+logger.debug('message');
 ```
