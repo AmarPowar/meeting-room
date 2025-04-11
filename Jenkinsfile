@@ -23,10 +23,6 @@ pipeline {
       }
     }
 
-    stage('Docker Build & Push') {
-      steps {
-        sh 'docker build -t room-service .'
-      }
-    }
+ 
   }
 }
