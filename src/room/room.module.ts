@@ -4,7 +4,7 @@ import { RoomService } from './room.service';
 import { RoomController } from './room.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Room } from './entities/room.entity';
-import { CustomLogger } from 'src/comman/customLogger';
+import { CustomLogger } from '../comman/customLogger';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Room])],

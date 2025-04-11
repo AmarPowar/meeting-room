@@ -5,9 +5,9 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Room } from './entities/room.entity';
 import axios, { AxiosResponse } from 'axios';
-import { calculateIntroTime } from 'src/comman/utils';
-import { CustomLogger } from 'src/comman/customLogger';
-import { RANDOM_USER_BASE_URL } from 'src/comman/constant';
+import { calculateIntroTime } from '../comman/utils';
+import { CustomLogger } from '../comman/customLogger';
+import { RANDOM_USER_BASE_URL } from '../comman/constant';
 
 @Injectable()
 export class RoomService {

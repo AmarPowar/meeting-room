@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { CustomLogger } from 'src/comman/customLogger';
+import { CustomLogger } from '../comman/customLogger';
 
 @Injectable()
 export class HealthCheckService {
